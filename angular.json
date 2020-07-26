@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "Dean-SA-Website"
+    }
+  },
+  "defaultProject": "Dean-SA-Website",
+  "cli": {
+    "analytics": "0476b176-ba8b-494e-8ef2-b457201b9a0e"
+  }
 }
