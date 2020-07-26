@@ -1,0 +1,7 @@
+.navbar-fixed-left {
+  width: auto;
+  position: fixed;
+  border-radius: 0;
+  height: auto;
+  align-items: center;
+}

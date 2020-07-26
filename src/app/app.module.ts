@@ -8,6 +8,7 @@ import { HcuComponent } from './hcu/hcu.component';
 import { HousingComponent } from './housing/housing.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { StudentSupportComponent } from './student-support/student-support.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { StudentSupportComponent } from './student-support/student-support.compo
     HomeComponent,
     HcuComponent,
     HousingComponent,
-    StudentSupportComponent
+    StudentSupportComponent,
+    ContactUsComponent
   ],
   imports: [
     BrowserModule,
