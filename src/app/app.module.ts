@@ -7,13 +7,15 @@ import { HomeComponent } from './home/home.component';
 import { HcuComponent } from './hcu/hcu.component';
 import { HousingComponent } from './housing/housing.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { StudentSupportComponent } from './student-support/student-support.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     HcuComponent,
-    HousingComponent
+    HousingComponent,
+    StudentSupportComponent
   ],
   imports: [
     BrowserModule,
