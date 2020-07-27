@@ -9,6 +9,10 @@ import { HousingComponent } from './housing/housing.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { StudentSupportComponent } from './student-support/student-support.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { SidebarModule } from 'ng-sidebar';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatGridListModule} from '@angular/material/grid-list';
 
 @NgModule({
   declarations: [
@@ -23,6 +27,10 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
     BrowserModule,
     AppRoutingModule,
     NgbModule,
+    FontAwesomeModule,
+    SidebarModule,
+    BrowserAnimationsModule,
+    MatGridListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

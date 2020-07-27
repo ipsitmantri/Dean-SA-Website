@@ -1,8 +1,11 @@
-<div class="container-fluid">
+<div class="container-fluid p-3 my-3">
   <div class="row">
-    <div class="col-2">
-      <nav class="navbar navbar-light bg-light position-fixed" id="hov">
-        <ul class="navbar-nav mx-auto">
+    <div class="col-2" style="width: max-content">
+      <nav class="navbar navbar-light bg-light" id="hov">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <ul class="navbar-nav mx-auto" id="navbarSupportedContent">
           <li class="nav-item"><a id="dsa" class="nav-link btn btn-light" (click)="display($event)">Dean SA</a></li>
           <li class="nav-item"><a id="adsa" class="nav-link btn btn-light" (click)="display($event)">Associate Dean SA</a></li>
           <li class="nav-item"><a id="hcu"  class="nav-link btn btn-light" (click)="display($event)">Hostel Coordinating Unit</a></li>
@@ -23,11 +26,11 @@
               <h3 style="padding-left: 30px">Dean SA</h3>
               <ul>
                 <li>Prof.Tapanendu Kundu</li>
-                <li>Email: <a href="mailto:dean.sa@iitb.ac.in" target="_blank">dean.sa@iitb.ac.in</a></li>
-                <li>Phone: +91-22-2576 7079
+                <li><fa-icon [icon]="email"></fa-icon><a href="mailto:dean.sa@iitb.ac.in" target="_blank"> dean.sa@iitb.ac.in</a></li>
+                <li><fa-icon [icon]="phone"></fa-icon> +91-22-2576 7079
                 </li>
-                <li>Fax: +91-22-2576 4040</li>
-                <li>Address: Dean SA Office, Main Building, First Floor, Indian Institute of Technology Bombay, Powai, Mumbai 400 076.</li>
+                <li><fa-icon [icon]="fax"></fa-icon> +91-22-2576 4040</li>
+                <li><fa-icon [icon]="address"></fa-icon> Dean SA Office, Main Building, First Floor, Indian Institute of Technology Bombay, Powai, Mumbai 400 076.</li>
               </ul>
             </div>
           </div>
@@ -112,102 +115,171 @@
           </div>
         </div>
         <div class="container p-3 my-3" id="gss" style="display: none">
-          <div class="row p-3 my-3">
-            <div class="col">
-              <img src="assets/images/GSHA.jpg" class="img-fluid rounded" style="width: 168px; height: 220px">
-            </div>
-            <div class="col" style="padding-top: 30px;">
-              <h3 style="padding-left: 30px">General Secretary Hostel Affairs (GSHA)</h3>
-              <ul>
-                <li>Mohd. Zakir Hussain</li>
-                <li>Email: <a href="mailto:gsecha@iitb.ac.in" target="_blank">gsecha@iitb.ac.in</a></li>
-                <li>Website: <a href="https://gymkhana.iitb.ac.in/hostels/home" target="_blank">https://gymkhana.iitb.ac.in/hostels/home</a>
-                </li>
-              </ul>
-            </div>
+          <nav class="navbar navbar-expand navbar-light bg-light" id="gsecs">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#SupportedContent" aria-controls="SupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <ul class="navbar-nav mx-auto" id="SupportedContent">
+              <li class="nav-item"><a id="gsha" class="nav-link btn btn-link" (click)="switch($event)">Hostel Affairs</a></li>
+<!--              <li class="nav-item"><a id="sarc" class="nav-link btn btn-link" (click)="switch($event)">Student Alumni Relations Cell</a></li>-->
+              <li class="nav-item"><a id="ugac"  class="nav-link btn btn-link" (click)="switch($event)">Academic Affairs (UG)</a></li>
+              <li class="nav-item"><a id="pgac"  class="nav-link btn btn-link" (click)="switch($event)">Academic Affairs (PG)</a></li>
+              <li class="nav-item"><a id="gssa"  class="nav-link btn btn-link" (click)="switch($event)">Sports Affairs</a></li>
+              <li class="nav-item"><a id="gsca"  class="nav-link btn btn-link" (click)="switch($event)">Cultural Affairs</a></li>
+              <li class="nav-item"><a id="gsta"  class="nav-link btn btn-link" (click)="switch($event)">Technical Affairs</a></li>
+            </ul>
+          </nav>
+          <div class="row p-3 my-3" id="gshaa" style="display: block">
+            <h1>Hostel Affairs</h1>
+            <h2 style="padding-left: 30px">General Secretary Hostel Affairs</h2><br>
+            <mat-grid-list cols="4" rowHeight="220px">
+              <mat-grid-tile colspan="1"><img src="assets/images/GSHA.jpg" class="img-fluid rounded" style="width: 168px; margin: auto; height: 220px"></mat-grid-tile>
+              <mat-grid-tile colspan="2">
+                              <ul>
+                                <li>Mohd. Zakir Hussain</li>
+                                <li><fa-icon [icon]="email"></fa-icon><a href="mailto:gsecha@iitb.ac.in" target="_blank"> gsecha@iitb.ac.in</a></li>
+                                <li><fa-icon [icon]="website"></fa-icon><a href="https://gymkhana.iitb.ac.in/hostels/home" target="_blank"> https://gymkhana.iitb.ac.in/hostels/home</a>
+                                </li>
+                              </ul>
+              </mat-grid-tile>
+            </mat-grid-list>
+            <div class="my-3 p-3"></div>
+            <h2 style="padding-left: 30px">Faculty Advisor</h2>
+            <mat-grid-list rowHeight="220px" cols="4">
+              <mat-grid-tile colspan="1"><img src="assets/images/GMT1.jpg" class="img-fluid rounded" style="width: 168px; height: 220px; margin: auto"></mat-grid-tile>
+              <mat-grid-tile colspan="2">
+                <ul>
+                  <li>Prof. George Mathew</li>
+                  <li><fa-icon [icon]="email"></fa-icon><a href="mailto:adean.sa@iitb.ac.in" target="_blank"> adean.sa@iitb.ac.in</a></li>
+                  <!--                  <li><fa-icon [icon]="website"></fa-icon><a href="https://gymkhana.iitb.ac.in/~sports/" target="_blank"> https://gymkhana.iitb.ac.in/~sports/</a>-->
+                  <!--                  </li>-->
+                </ul>
+              </mat-grid-tile>
+            </mat-grid-list>
+            <div class="p-3 my-3"></div>
+            <h1>Student Alumni Relations Cell</h1>
+            <h3 style="padding-left: 30px">Overall Coordinators</h3><br>
+            <mat-grid-list rowHeight="220px" cols="4">
+              <mat-grid-tile colspan="1"><img src="assets/images/GMT1.jpg" class="img-fluid rounded" style="width: 168px; height: 220px; margin: auto"></mat-grid-tile>
+              <mat-grid-tile colspan="2">
+                <ul>
+                  <li>Mohd. Zakir Hussain</li>
+                  <li><fa-icon [icon]="email"></fa-icon><a href="mailto:gsecha@iitb.ac.in" target="_blank"> gsecha@iitb.ac.in</a></li>
+                  <li><fa-icon [icon]="website"></fa-icon><a href="https://gymkhana.iitb.ac.in/hostels/home" target="_blank"> https://gymkhana.iitb.ac.in/hostels/home</a>
+                  </li>
+                </ul>
+              </mat-grid-tile>
+            </mat-grid-list>
           </div>
-          <div class="row p-3 my-3">
-            <div class="col">
-              <img src="assets/images/GMT1.jpg" class="img-fluid rounded" style="width: 168px; height: 220px">
-            </div>
-            <div class="col" style="padding-top: 30px;">
-              <h3 style="padding-left: 30px">Overall Coordinator, Student Alumni Relations Cell</h3>
-              <ul>
-                <li>Name</li>
-                <li>Email: <a href="mailto:arhcu@iitb.ac.in" target="_blank">arhcu@iitb.ac.in</a></li>
-                <li>Website: <a href="https://sarc-iitb.org/" target="_blank">https://sarc-iitb.org/</a>
-                </li>
-              </ul>
-            </div>
+<!--          <div class="row p-2 my-2" id="sarcc" style="display: none">-->
+<!--            <h3 style="padding-left: 30px">Overall Coordinators</h3><br>-->
+<!--            <mat-grid-list rowHeight="220px" cols="4">-->
+<!--              <mat-grid-tile colspan="1"><img src="assets/images/GMT1.jpg" class="img-fluid rounded" style="width: 168px; height: 220px; margin: auto"></mat-grid-tile>-->
+<!--              <mat-grid-tile colspan="2">-->
+<!--                <ul>-->
+<!--                  <li>Mohd. Zakir Hussain</li>-->
+<!--                  <li><fa-icon [icon]="email"></fa-icon><a href="mailto:gsecha@iitb.ac.in" target="_blank"> gsecha@iitb.ac.in</a></li>-->
+<!--                  <li><fa-icon [icon]="website"></fa-icon><a href="https://gymkhana.iitb.ac.in/hostels/home" target="_blank"> https://gymkhana.iitb.ac.in/hostels/home</a>-->
+<!--                  </li>-->
+<!--                </ul>-->
+<!--              </mat-grid-tile>-->
+<!--            </mat-grid-list>-->
+<!--          </div>-->
+          <div class="row p-3 my-3" id="ugacc" style="display: none">
+            <h2 style="padding-left: 30px">General Secretary Academic Affairs (UG)</h2><br>
+            <mat-grid-list rowHeight="220px" cols="4">
+              <mat-grid-tile colspan="1"><img src="assets/images/Madhav%20Gupta%20Picture.jpg" class="img-fluid rounded" style="width: 168px; height: 220px; margin: auto"></mat-grid-tile>
+              <mat-grid-tile colspan="2">
+                <ul>
+                  <li>Madhav Gupta</li>
+                  <li><fa-icon [icon]="email"></fa-icon><a href="mailto:gsecaaug@iitb.ac.in" target="_blank"> gsecaaug@iitb.ac.in</a>, <a href="mailto:gsecaaug.iitb.@gmail.com" target="_blank"> gsecaaug.iitb.@gmail.com</a></li>
+                  <li><fa-icon [icon]="website"></fa-icon><a href="https://www.facebook.com/iitb.ugacads/" target="_blank"> https://www.facebook.com/iitb.ugacads/</a>
+                  </li>
+                </ul>
+              </mat-grid-tile>
+            </mat-grid-list>
           </div>
-          <div class="row p-3 my-3">
-            <div class="col">
-              <img src="assets/images/GMT1.jpg" class="img-fluid rounded" style="width: 168px; height: 220px">
-            </div>
-            <div class="col" style="padding-top: 30px;">
-              <h3 style="padding-left: 30px">General Secretary Academic Affairs (UG) - GSAA(UG)</h3>
-              <ul>
-                <li>Name</li>
-                <li>Email: <a href="mailto:arhcu@iitb.ac.in" target="_blank">arhcu@iitb.ac.in</a></li>
-                <li>Website: <a href="https://gymkhana.iitb.ac.in/~ugacademics/app/#/ugacads" target="_blank">https://gymkhana.iitb.ac.in/~ugacademics/app/#/ugacads</a></li>
-              </ul>
-            </div>
+          <div class="row p-3 my-3" id="pgacc" style="display: none">
+            <h2 style="padding-left: 30px">General Secretary Academic Affairs (PG)</h2><br>
+            <mat-grid-list rowHeight="220px" cols="4">
+              <mat-grid-tile colspan="1"><img src="assets/images/Madhav%20Gupta%20Picture.jpg" class="img-fluid rounded" style="width: 168px; height: 220px; margin: auto"></mat-grid-tile>
+              <mat-grid-tile colspan="2">
+                <ul>
+                  <li>Madhav Gupta</li>
+                  <li><fa-icon [icon]="email"></fa-icon><a href="mailto:gsecaaug@iitb.ac.in" target="_blank"> gsecaaug@iitb.ac.in</a>, <a href="mailto:gsecaaug.iitb.@gmail.com" target="_blank"> gsecaaug.iitb.@gmail.com</a></li>
+                  <li><fa-icon [icon]="website"></fa-icon><a href="https://www.facebook.com/iitb.ugacads/" target="_blank"> https://www.facebook.com/iitb.ugacads/</a>
+                  </li>
+                </ul>
+              </mat-grid-tile>
+            </mat-grid-list>
           </div>
-          <div class="row p-3 my-3">
-            <div class="col">
-              <img src="assets/images/GMT1.jpg" class="img-fluid rounded" style="width: 168px; height: 220px">
-            </div>
-            <div class="col" style="padding-top: 30px;">
-              <h3 style="padding-left: 30px">General Secretary Academic Affairs (PG) - GSAA(PG)</h3>
-              <ul>
-                <li>Name</li>
-                <li>Email: <a href="mailto:arhcu@iitb.ac.in" target="_blank">arhcu@iitb.ac.in</a></li>
-                <li>Website: <a href="https://gymkhana.iitb.ac.in/~academics/pgac/" target="_blank">https://gymkhana.iitb.ac.in/~academics/pgac/</a>
-                </li>
-              </ul>
-            </div>
+          <div class="row p-3 my-3" id="gssaa" style="display: none">
+            <h2 style="padding-left: 30px">General Secretary Sports Affairs</h2><br>
+            <mat-grid-list rowHeight="220px" cols="4">
+              <mat-grid-tile colspan="1"><img src="assets/images/Yog.jpeg" class="img-fluid rounded" style="width: 168px; height: 220px; margin: auto"></mat-grid-tile>
+              <mat-grid-tile colspan="2">
+                <ul>
+                  <li>Yogender Singh</li>
+                  <li><fa-icon [icon]="email"></fa-icon><a href="mailto:gsecsport@iitb.ac.in" target="_blank"> gsecsport@iitb.ac.in</a></li>
+                  <li><fa-icon [icon]="website"></fa-icon><a href="https://gymkhana.iitb.ac.in/~sports/" target="_blank"> https://gymkhana.iitb.ac.in/~sports/</a>
+                  </li>
+                </ul>
+              </mat-grid-tile>
+            </mat-grid-list>
+            <div class="p-3 my-3"></div>
+            <h2 style="padding-left: 30px">Faculty Advisor</h2>
+            <mat-grid-list rowHeight="220px" cols="4">
+              <mat-grid-tile colspan="1"><img src="assets/images/SF.jpg" class="img-fluid rounded" style="width: 168px; height: 220px; margin: auto"></mat-grid-tile>
+              <mat-grid-tile colspan="2">
+                <ul>
+                  <li>Prof. Atul Srivastava</li>
+                  <li><fa-icon [icon]="email"></fa-icon><a href="mailto:atulsr@iitb.ac.in" target="_blank"> atulsr@iitb.ac.in</a></li>
+<!--                  <li><fa-icon [icon]="website"></fa-icon><a href="https://gymkhana.iitb.ac.in/~sports/" target="_blank"> https://gymkhana.iitb.ac.in/~sports/</a>-->
+<!--                  </li>-->
+                </ul>
+              </mat-grid-tile>
+            </mat-grid-list>
           </div>
-          <div class="row p-3 my-3">
-            <div class="col">
-              <img src="assets/images/GMT1.jpg" class="img-fluid rounded" style="width: 168px; height: 220px">
-            </div>
-            <div class="col" style="padding-top: 30px;">
-              <h3 style="padding-left: 30px">General Secretary Sports Affairs (GSSA)</h3>
-              <ul>
-                <li>Name</li>
-                <li>Email: <a href="mailto:arhcu@iitb.ac.in" target="_blank">arhcu@iitb.ac.in</a></li>
-                <li>Website:<a href="https://gymkhana.iitb.ac.in/~sports/" target="_blank">https://gymkhana.iitb.ac.in/~sports/</a>
-                </li>
-              </ul>
-            </div>
+          <div class="row p-3 my-3" id="gstaa" style="display: none">
+            <h2 style="padding-left: 30px">General Secretary Technical Affairs</h2><br>
+            <mat-grid-list rowHeight="220px" cols="4">
+              <mat-grid-tile colspan="1"><img src="assets/images/amittal.jpg" class="img-fluid rounded" style="width: 168px; height: 220px; margin: auto"></mat-grid-tile>
+              <mat-grid-tile colspan="2">
+                <ul>
+                  <li>Anirudh Mittal</li>
+                  <li><fa-icon [icon]="email"></fa-icon><a href="mailto:gsectech@iitb.ac.in" target="_blank"> gsectech@iitb.ac.in</a></li>
+                  <li><fa-icon [icon]="website"></fa-icon><a href="https://www.tech-iitb.org/" target="_blank"> https://www.tech-iitb.org/</a>
+                  </li>
+                </ul>
+              </mat-grid-tile>
+            </mat-grid-list>
           </div>
-          <div class="row p-3 my-3">
-            <div class="col">
-              <img src="assets/images/GMT1.jpg" class="img-fluid rounded" style="width: 168px; height: 220px">
-            </div>
-            <div class="col" style="padding-top: 30px;">
-              <h3 style="padding-left: 30px">General Secretary Technical Affairs (GSTA)</h3>
-              <ul>
-                <li>Name</li>
-                <li>Email: <a href="mailto:arhcu@iitb.ac.in" target="_blank">arhcu@iitb.ac.in</a></li>
-                <li>Website: <a href="https://www.tech-iitb.org/" target="_blank">https://www.tech-iitb.org/</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="row p-3 my-3">
-            <div class="col">
-              <img src="assets/images/GMT1.jpg" class="img-fluid rounded" style="width: 168px; height: 220px">
-            </div>
-            <div class="col" style="padding-top: 30px;">
-              <h3 style="padding-left: 30px">General Secretary Cultural Affairs (GSCA)</h3>
-              <ul>
-                <li>Name</li>
-                <li>Email: <a href="mailto:arhcu@iitb.ac.in" target="_blank">arhcu@iitb.ac.in</a></li>
-                <li>Website: <a href="https://gymkhana.iitb.ac.in/~cultural/web/login_form.php" target="_blank">https://gymkhana.iitb.ac.in/~cultural/web/login_form.php</a>
-                </li>
-              </ul>
-            </div>
+          <div class="row p-3 my-3" id="gscaa" style="display: none">
+            <h2 style="padding-left: 30px">General Secretary Cultural Affairs</h2><br>
+            <mat-grid-list rowHeight="220px" cols="4">
+              <mat-grid-tile colspan="1"><img src="assets/images/ca..jpg" class="img-fluid rounded" style="width: 168px; height: 220px; margin: auto"></mat-grid-tile>
+              <mat-grid-tile colspan="2">
+                <ul>
+                  <li>Nandlal Chaudhary</li>
+                  <li><fa-icon [icon]="email"></fa-icon><a href="mailto:nandlalc@iitb.ac.in" target="_blank"> nandlalc@iitb.ac.in</a></li>
+                  <li><fa-icon [icon]="website"></fa-icon><a href="https://gymkhana.iitb.ac.in/~cultural" target="_blank"> https://gymkhana.iitb.ac.in/~cultural</a>
+                  </li>
+                </ul>
+              </mat-grid-tile>
+            </mat-grid-list>
+            <div class="p-3 my-3"></div>
+            <h2 style="padding-left: 30px">Faculty Advisor</h2>
+            <mat-grid-list rowHeight="220px" cols="4">
+              <mat-grid-tile colspan="1"><img src="assets/images/CF.png" class="img-fluid rounded" style="width: 168px; height: 220px; margin: auto"></mat-grid-tile>
+              <mat-grid-tile colspan="2">
+                <ul>
+                  <li>Prof. Prasenjit Bhaumik</li>
+                  <li><fa-icon [icon]="email"></fa-icon><a href="mailto:pbhaumik@iitb.ac.in" target="_blank"> pbhaumik@iitb.ac.in</a></li>
+<!--                  <li><fa-icon [icon]="website"></fa-icon><a href="https://gymkhana.iitb.ac.in/~sports/" target="_blank"> https://gymkhana.iitb.ac.in/~sports/</a>-->
+<!--                  </li>-->
+                </ul>
+              </mat-grid-tile>
+            </mat-grid-list>
           </div>
         </div>
         <div class="container p-3 my-3" id="ibb" style="display: none">
