@@ -1,10 +1,19 @@
-<div class="container-fluid p-3 my-3">
-  <h1 style="text-align: center">Hostel Coordinating Unit (HCU)</h1>
-  <div class="container-fluid">
+<div class="container p-3 my-3">
+  <h1 class="display-1" style="text-align: center">Hostel Coordinating Unit (HCU)</h1>
+  <div class="container">
+    <ngb-carousel>
+      <ng-container *ngFor="let pic of hostelPics">
+        <ng-template ngbSlide>
+          <img src="{{pic}}" class="img-fluid" width="100%" style="height: content-box">
+        </ng-template>
+      </ng-container>
+    </ngb-carousel>
+  </div>
+  <div class="container p-3 my-3">
     <h2>Overview</h2>
     <p style="font-size: 12pt">The Hostel Coordinating unit is located on the minus one level of the Main Building of IIT Bombay. The HCU has the role of managing and Coordinating the activities of all 18 Student Hostels of campus (Hostels No. 1 to16, Hostel No 18 and Tansa) and 3 Buildings for Married research Scholars (MRSB, Tulsi, and Type-1). The HCU also manages the workforce under the centralized hostel management system.</p>
   </div>
-  <div class="container-fluid">
+  <div class="container p-3 my-3">
     <h2>HCU Office</h2>
     <div class="row">
       <div class="col-2">
@@ -15,7 +24,21 @@
       (Pic change afterwards)</div>
     </div>
   </div>
-  <div class="container-fluid p-2">
+  <div class="container p-3 my-3">
+    <h2>About Hostels</h2>
+    <ul>
+      <li>There are total 18 hostels on campus (Hostels No. 1 to 16, Hostel No. 18 and Tansa) and 3 Building for Married Research Scholars (MRSB, Tulsi, and Type-1)
+      </li>
+      <li>Every hostel generally has washing and ironing facilities, a mess (dining hall), a computer room, a TV, sports grounds and indoor games like Table Tennis, Footer, Carrom Board, Chess etc. The access rules vary, but in general, these facilities can be availed against your I-Card. There is internet connection in each room, but we highly recommend that these may only be used for productive purposes.
+      </li>
+      <li>All hostels have a Xerox and Stationery shop for basic requirements. Each room has two tube lights, fan(s), table(s), chair(s) and cupboard(s). If you want anything else, you will have to purchase it. All rooms have nets fitted on the windows. Rooms are cleaned by the housekeeping staff once every month. Apart from that, you are supposed to take care of your rooms yourselves.
+      </li>
+      <li>For all maintenance and other issues, there is one centralized complaint management system at <a href="https://support.iitb.ac.in/support/login.jsp" target="_blank">IITB Maintenance Complaint Portal: Login Page.</a>
+      </li>
+      <li>This can be used to record complaints, issues and suggestions about various things inside the campus. You can even find tracking of your complaints in the portal. If for some reason you cannot access it, you can always contact the Hall Manager or the Hostel Maintenance Council</li>
+    </ul>
+  </div>
+  <div class="container p-3 my-3">
     <h2>Scope of work - Hostel Coordinating unit</h2>
     <ul>
       <li>Coordinating the activities of various Hostels in matters of common interest and common policy

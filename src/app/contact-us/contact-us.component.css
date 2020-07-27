@@ -13,3 +13,19 @@ img {
   height: 220px;
   margin: auto;
 }
+.divider {
+  height: 1px;
+  margin: 9px 0;
+  overflow: hidden;
+  background-color: black;
+}
+h1 {
+  font-size: xx-large;
+  font-weight: 400;
+}
+h2 {
+  font-size: x-large;
+}
+li, p {
+  font-size: 12pt;
+}

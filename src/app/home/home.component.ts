@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {Dean} from './dean';
+import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-home',
@@ -10,7 +11,12 @@ export class HomeComponent implements OnInit {
   deanSA: Dean;
   adeanSA: Dean;
 
-  constructor() { }
+  constructor(config: NgbCarouselConfig) {
+    config.interval = 2000;
+    config.wrap = true;
+    config.keyboard = false;
+    config.pauseOnHover = false;
+  }
 
   ngOnInit(): void {
     this.deanSA = {

@@ -1,5 +1,40 @@
 <div class="container p-3 my-3">
-  <h2>Message from Dean SA and A.Dean SA</h2>
+  <ngb-carousel>
+    <ng-template ngbSlide>
+      <img src="assets/images/101.jpg" class="img-fluid">
+    </ng-template>
+    <ng-template ngbSlide>
+      <img src="assets/images/102.jpg" class="img-fluid">
+    </ng-template>
+    <ng-template ngbSlide>
+      <img src="assets/images/103.jpg" class="img-fluid">
+    </ng-template>
+    <ng-template ngbSlide>
+      <img src="assets/images/104.jpg" class="img-fluid">
+    </ng-template>
+    <ng-template ngbSlide>
+      <img src="assets/images/105.jpg" class="img-fluid">
+    </ng-template>
+    <ng-template ngbSlide>
+      <img src="assets/images/107.jpg" class="img-fluid">
+    </ng-template>
+    <ng-template ngbSlide>
+      <img src="assets/images/108.jpg" class="img-fluid">
+    </ng-template>
+  </ngb-carousel>
+</div>
+<div class="container p-3 my-3">
+  <h2>About</h2>
+  <p>The IIT Bombay campus provides an ideal setting for students to participate in recreational and extracurricular activities. IITB's core program involving co-curricular activities for UG students in their first year is meant to provide them a launching pad for these activities. The mandate of the Student Affairs Office is to coordinate and regulate all aspects of student life at IITB. This is carried out primarily through two bodies:</p>
+  <ol>
+    <li>The <a routerLink="/hcu" target="_blank"><b>Hostel Coordinating Unit</b></a>, manages and Coordinates the activities of all Student Hostels of campus (Hostels No. 1 to16, Hostel No. 18 and Tansa) and Building for Married research Scholars (MRSB, Tulsi, and Type-1). The HCU also manages the workforce under the centralized hostel management system
+    </li>
+    <li>The <a href="https://gymkhana.iitb.ac.in/" target="_blank"><b>Students' Gymkhana</b></a> along with its infrastructure is an organization to foster and develop all student activities in the Institute. It aims at promoting and developing organizational abilities in students. It has been successful over the years in evolving a well-informed, articulate and participatory student community life. It has been instrumental in identifying student issues and promoting discussion on them. It functions as the office for all election and nominations of students for gymkhana activities.
+    </li>
+  </ol>
+</div>
+<div class="container p-3 my-3">
+  <h2>Message from Dean SA and Associate Dean SA</h2>
   <div class="container row p-3 my-3">
     <div class="col-3">
       <img src="{{deanSA.picture}}" class="img-fluid rounded">
@@ -16,16 +51,5 @@
     <div class="col"><p>{{adeanSA.message}}</p>
       <footer *ngFor="let i of adeanSA.signature.split('<br>')">{{i}}<br></footer>
     </div>
-  </div>
-
-  <div class="container p-3 my-3">
-    <h2>About</h2>
-    <p>The IIT Bombay campus provides an ideal setting for students to participate in recreational and extracurricular activities. IITB's core program involving co-curricular activities for UG students in their first year is meant to provide them a launching pad for these activities. The mandate of the Student Affairs Office is to coordinate and regulate all aspects of student life at IITB. This is carried out primarily through two bodies:</p>
-    <ol>
-      <li>The <b>Hostel Coordinating Unit</b>, manages and Coordinates the activities of all Student Hostels of campus (Hostels No. 1 to16, Hostel No. 18 and Tansa) and Building for Married research Scholars (MRSB, Tulsi, and Type-1). The HCU also manages the workforce under the centralized hostel management system
-      </li>
-      <li>The <b>Students' Gymkhana</b> along with its infrastructure is an organization to foster and develop all student activities in the Institute. It aims at promoting and developing organizational abilities in students. It has been successful over the years in evolving a well-informed, articulate and participatory student community life. It has been instrumental in identifying student issues and promoting discussion on them. It functions as the office for all election and nominations of students for gymkhana activities.
-      </li>
-    </ol>
   </div>
 </div>
