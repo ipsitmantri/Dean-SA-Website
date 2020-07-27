@@ -27,7 +27,6 @@ export class ContactUsComponent implements OnInit {
     let id = event.target.id;
     id = id.toString();
     const ele = document.getElementById(id + id[id.length - 1]);
-    console.log(ele);
     if (ele.style.display === 'none') {
       ele.style.display = 'block';
     }
@@ -44,7 +43,6 @@ export class ContactUsComponent implements OnInit {
     }
     const id = event.target.id.toString();
     const ele = document.getElementById(id + id[id.length - 1]);
-    console.log(ele);
     if (ele.style.display === 'none') {
       ele.style.display = 'block';
     }

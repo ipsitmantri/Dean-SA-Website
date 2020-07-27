@@ -283,21 +283,58 @@
           </div>
         </div>
         <div class="container p-3 my-3" id="ibb" style="display: none">
-          <div class="row p-3 my-3">
-            <div class="col">
-              <img src="assets/images/GMT1.jpg" class="img-fluid rounded" style="width: 168px; height: 220px">
-            </div>
-            <div class="col" style="padding-top: 30px;">
-              <h3 style="padding-left: 30px">Mood Indigo</h3>
-              <ul>
-                <li>Name</li>
-                <li>Email: <a href="mailto:arhcu@iitb.ac.in" target="_blank">arhcu@iitb.ac.in</a></li>
-                <li>Website: <a href="https://gymkhana.iitb.ac.in/~cultural/web/login_form.php" target="_blank">https://gymkhana.iitb.ac.in/~cultural/web/login_form.php</a>
-                </li>
-              </ul>
-            </div>
+          <nav class="navbar navbar-expand-sm navbar-light bg-light justify-content-center" id="ibs">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#SupportedContent1" aria-controls="SupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <ul class="navbar-nav mx-auto" id="SupportedContent1">
+              <li class="nav-item"><a id="mi" class="nav-link btn btn-link" (click)="switch($event)">Mood Indigo</a></li>
+              <li class="nav-item"><a id="tf"  class="nav-link btn btn-link" (click)="switch($event)">Techfest</a></li>
+              <li class="nav-item"><a id="ec"  class="nav-link btn btn-link" (click)="switch($event)">E - Cell</a></li>
+              <li class="nav-item"><a id="ab"  class="nav-link btn btn-link" (click)="switch($event)">Abhyuday</a></li>
+            </ul>
+          </nav>
+          <div class="row p-3 my-3" id="mii" style="display: block">
+            <h1>Mood Indigo</h1>
+            <h2 style="padding-left: 30px">Overall Coordinators</h2>
+            <mat-grid-list rowHeight="220px" cols="4">
+              <mat-grid-tile colspan="1"><img src="assets/images/atharva_MI_OC.JPG" class="img-fluid rounded"></mat-grid-tile>
+              <mat-grid-tile colspan="2">
+                <ul>
+                  <li>Atharva Padhye</li>
+                  <li><fa-icon [icon]="email"></fa-icon><a href="mailto:17d170004@iitb.ac.in" target="_blank"> 17d170004@iitb.ac.in</a>, <a href="mailto:gsecaaug.iitb.@gmail.com" target="_blank"> gsecaaug.iitb.@gmail.com</a></li>
+                  <li><fa-icon [icon]="website"></fa-icon><a href="http://www.moodi.org/" target="_blank"> http://www.moodi.org/</a>
+                  </li>
+                </ul>
+              </mat-grid-tile>
+            </mat-grid-list>
+            <div class="p-3 my-3"></div>
+            <mat-grid-list rowHeight="220px" cols="4">
+              <mat-grid-tile colspan="1"><img src="assets/images/naman_MI_OC.jpg" class="img-fluid rounded"></mat-grid-tile>
+              <mat-grid-tile colspan="2">
+                <ul>
+                  <li>Naman Sureka</li>
+                  <li><fa-icon [icon]="email"></fa-icon><a href="mailto:17d170015@iitb.ac.in" target="_blank"> 17d170004@iitb.ac.in</a>, <a href="mailto:gsecaaug.iitb.@gmail.com" target="_blank"> gsecaaug.iitb.@gmail.com</a></li>
+                  <li><fa-icon [icon]="website"></fa-icon><a href="http://www.moodi.org/" target="_blank"> http://www.moodi.org/</a>
+                  </li>
+                </ul>
+              </mat-grid-tile>
+            </mat-grid-list>
+            <div class="p-3 my-3"></div>
+            <h2 style="padding-left: 30px">Faculty Advisor</h2>
+            <mat-grid-list rowHeight="220px" cols="4">
+              <mat-grid-tile colspan="1"><img src="assets/images/pbhaumik_pic.jpg" class="img-fluid rounded"></mat-grid-tile>
+              <mat-grid-tile colspan="2">
+                <ul>
+                  <li>Prof. P. Bhaumik</li>
+                  <li><fa-icon [icon]="email"></fa-icon><a href="mailto:pbhaumik@iitb.ac.in  " target="_blank"> pbhaumik@iitb.ac.in  </a>, <a href="mailto:gsecaaug.iitb.@gmail.com" target="_blank"> gsecaaug.iitb.@gmail.com</a></li>
+<!--                  <li><fa-icon [icon]="website"></fa-icon><a href="http://www.moodi.org/" target="_blank"> http://www.moodi.org/</a>-->
+<!--                  </li>-->
+                </ul>
+              </mat-grid-tile>
+            </mat-grid-list>
           </div>
-          <div class="row p-3 my-3">
+          <div class="row p-3 my-3" id="tff" style="display: none">
             <div class="col">
               <img src="assets/images/GMT1.jpg" class="img-fluid rounded" style="width: 168px; height: 220px">
             </div>
@@ -311,7 +348,7 @@
               </ul>
             </div>
           </div>
-          <div class="row p-3 my-3">
+          <div class="row p-3 my-3" id="ecc" style="display: none">
             <div class="col">
               <img src="assets/images/GMT1.jpg" class="img-fluid rounded" style="width: 168px; height: 220px">
             </div>
@@ -325,7 +362,7 @@
               </ul>
             </div>
           </div>
-          <div class="row p-3 my-3">
+          <div class="row p-3 my-3" id="abb" style="display: none">
             <div class="col">
               <img src="assets/images/GMT1.jpg" class="img-fluid rounded" style="width: 168px; height: 220px">
             </div>
@@ -341,20 +378,69 @@
           </div>
         </div>
         <div class="container p-3 my-3" id="mm" style="display: none">
-          <div class="row p-3 my-3">
-            <div class="col">
-              <img src="assets/images/GMT1.jpg" class="img-fluid rounded" style="width: 168px; height: 220px">
-            </div>
-            <div class="col" style="padding-top: 30px;">
-              <h3 style="padding-left: 30px">Insight</h3>
+          <h1>Insight</h1>
+          <h2 style="padding-left: 30px">Chief Editors</h2>
+          <mat-grid-list rowHeight="220px" cols="4">
+            <mat-grid-tile colspan="1"><img src="assets/images/amogh.png" class="img-fluid rounded"></mat-grid-tile>
+            <mat-grid-tile colspan="2">
               <ul>
-                <li>Name</li>
-                <li>Email: <a href="mailto:arhcu@iitb.ac.in" target="_blank">arhcu@iitb.ac.in</a></li>
-                <li>Website: <a href="https://gymkhana.iitb.ac.in/~cultural/web/login_form.php" target="_blank">https://gymkhana.iitb.ac.in/~cultural/web/login_form.php</a>
+                <li>Amogh Gawaskar</li>
+                <li><fa-icon [icon]="email"></fa-icon><a href="mailto:170020027@iitb.ac.in" target="_blank"> 170020027@iitb.ac.in</a></li>
+                <li><fa-icon [icon]="website"></fa-icon><a href=": https://www.insightiitb.org/" target="_blank"> https://www.insightiitb.org/</a>
                 </li>
               </ul>
-            </div>
-          </div>
+            </mat-grid-tile>
+          </mat-grid-list>
+          <div class="p-3 my-3"></div>
+          <mat-grid-list rowHeight="220px" cols="4">
+            <mat-grid-tile colspan="1"><img src="assets/images/suman.png" class="img-fluid rounded"></mat-grid-tile>
+            <mat-grid-tile colspan="2">
+              <ul>
+                <li>Suman Mondal</li>
+                <li><fa-icon [icon]="email"></fa-icon><a href="mailto:suman_mondal@iitb.ac.in" target="_blank"> suman_mondal@iitb.ac.in</a></li>
+                <li><fa-icon [icon]="website"></fa-icon><a href=": https://www.insightiitb.org/" target="_blank"> https://www.insightiitb.org/</a>
+                </li>
+              </ul>
+            </mat-grid-tile>
+          </mat-grid-list>
+          <div class="p-3 my-3"></div>
+          <h2 style="padding-left: 30px">Faculty Advisors</h2>
+          <mat-grid-list rowHeight="220px" cols="4">
+            <mat-grid-tile colspan="1"><img src="assets/images/vjs.png" class="img-fluid rounded"></mat-grid-tile>
+            <mat-grid-tile colspan="2">
+              <ul>
+                <li>Prof. Vaijayanthi Sarma</li>
+                <li><fa-icon [icon]="email"></fa-icon><a href="mailto:vsarma@iitb.ac.in" target="_blank"> vsarma@iitb.ac.in</a></li>
+<!--                <li><fa-icon [icon]="website"></fa-icon><a href=": https://www.insightiitb.org/" target="_blank"> https://www.insightiitb.org/</a>-->
+<!--                </li>-->
+              </ul>
+            </mat-grid-tile>
+          </mat-grid-list>
+          <div class="p-3 my-3"></div>
+          <mat-grid-list rowHeight="220px" cols="4">
+            <mat-grid-tile colspan="1"><img src="assets/images/akshay.png" class="img-fluid rounded"></mat-grid-tile>
+            <mat-grid-tile colspan="2">
+              <ul>
+                <li>Prof. S Akshay,</li>
+                <li><fa-icon [icon]="email"></fa-icon><a href="mailto:akshayss@cse.iitb.ac.in" target="_blank"> akshayss@cse.iitb.ac.in</a></li>
+                <!--                <li><fa-icon [icon]="website"></fa-icon><a href=": https://www.insightiitb.org/" target="_blank"> https://www.insightiitb.org/</a>-->
+                <!--                </li>-->
+              </ul>
+            </mat-grid-tile>
+          </mat-grid-list>
+          <div class="p-3 my-3"></div>
+          <mat-grid-list rowHeight="220px" cols="4">
+            <mat-grid-tile colspan="1"><img src="assets/images/manju.png" class="img-fluid rounded"></mat-grid-tile>
+            <mat-grid-tile colspan="2">
+              <ul>
+                <li>Prof. D Manjunath</li>
+                <li><fa-icon [icon]="email"></fa-icon><a href="mailto:dmanju@ee.iitb.ac.in" target="_blank"> dmanju@ee.iitb.ac.in</a></li>
+                <!--                <li><fa-icon [icon]="website"></fa-icon><a href=": https://www.insightiitb.org/" target="_blank"> https://www.insightiitb.org/</a>-->
+                <!--                </li>-->
+              </ul>
+            </mat-grid-tile>
+          </mat-grid-list>
+          <div class="p-3 my-3"></div>
         </div>
       </div>
     </div>
