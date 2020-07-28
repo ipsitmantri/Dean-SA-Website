@@ -10,3 +10,30 @@ body {
   width: available;
   height: 200px;
 }
+.heading {
+  color: white;
+  padding-left: 1em;
+  padding-top: 10px;
+  font-size: 20pt;
+}
+
+#subheader {
+  padding-left: 15em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  display: inline-block;
+}
+#menu {
+  margin-top: 0;
+  padding-top: 0;
+  float: right;
+  font: normal normal bold 15px 'Open Sans',sans-serif;
+  color: azure;
+}
+#menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: inline-list-item;
+  align-content: center;
+}
