@@ -1,26 +1,31 @@
 <div class="container p-3 my-3">
   <ngb-carousel>
-    <ng-template ngbSlide>
-      <img src="assets/images/101.jpg" class="img-fluid">
-    </ng-template>
-    <ng-template ngbSlide>
-      <img src="assets/images/102.jpg" class="img-fluid">
-    </ng-template>
-    <ng-template ngbSlide>
-      <img src="assets/images/103.jpg" class="img-fluid">
-    </ng-template>
-    <ng-template ngbSlide>
-      <img src="assets/images/104.jpg" class="img-fluid">
-    </ng-template>
-    <ng-template ngbSlide>
-      <img src="assets/images/105.jpg" class="img-fluid">
-    </ng-template>
-    <ng-template ngbSlide>
-      <img src="assets/images/107.jpg" class="img-fluid">
-    </ng-template>
-    <ng-template ngbSlide>
-      <img src="assets/images/108.jpg" class="img-fluid">
-    </ng-template>
+    <ng-container *ngFor="let pic of instiPics">
+      <ng-template ngbSlide>
+        <img src="{{pic}}" class="img-fluid" width="100%" style="height: 400px">
+      </ng-template>
+    </ng-container>
+<!--    <ng-template ngbSlide>-->
+<!--      <img src="assets/images/101.jpg" class="img-fluid">-->
+<!--    </ng-template>-->
+<!--    <ng-template ngbSlide>-->
+<!--      <img src="assets/images/102.jpg" class="img-fluid">-->
+<!--    </ng-template>-->
+<!--    <ng-template ngbSlide>-->
+<!--      <img src="assets/images/103.jpg" class="img-fluid">-->
+<!--    </ng-template>-->
+<!--    <ng-template ngbSlide>-->
+<!--      <img src="assets/images/104.jpg" class="img-fluid">-->
+<!--    </ng-template>-->
+<!--    <ng-template ngbSlide>-->
+<!--      <img src="assets/images/105.jpg" class="img-fluid">-->
+<!--    </ng-template>-->
+<!--    <ng-template ngbSlide>-->
+<!--      <img src="assets/images/107.jpg" class="img-fluid">-->
+<!--    </ng-template>-->
+<!--    <ng-template ngbSlide>-->
+<!--      <img src="assets/images/108.jpg" class="img-fluid">-->
+<!--    </ng-template>-->
   </ngb-carousel>
 </div>
 <div class="container p-3 my-3">

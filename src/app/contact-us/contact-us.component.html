@@ -1,20 +1,24 @@
 <div class="container-fluid p-3 my-3">
   <div class="row">
-    <div class="col-2" style="width: max-content">
-      <nav class="navbar navbar-light bg-light" id="hov">
+    <div class="col-md-2">
+      <nav class="navbar navbar-light  bg-light" id="hov" style="margin: auto;">
+        <a class="navbar-brand">Contact Us</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <ul class="navbar-nav mx-auto" id="navbarSupportedContent">
-          <li class="nav-item"><a id="dsa" class="nav-link btn btn-light" (click)="display($event)">Dean SA</a></li>
-          <li class="nav-item"><a id="adsa" class="nav-link btn btn-light" (click)="display($event)">Associate Dean SA</a></li>
-          <li class="divider"></li>
-          <li class="nav-item"><a id="hcu"  class="nav-link btn btn-light" (click)="display($event)">Hostel Coordinating Unit</a></li>
-          <li class="divider"></li>
-          <li class="nav-item"><a id="gs"  class="nav-link btn btn-light" (click)="display($event)">Institute General Secretaries Councils</a></li>
-          <li class="nav-item"><a id="ib"  class="nav-link btn btn-light" (click)="display($event)">Independent Bodies</a></li>
-          <li class="nav-item"><a id="m"  class="nav-link btn btn-light" (click)="display($event)">Media</a></li>
-        </ul>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <span style="flex: 1 1 auto;"></span>
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item"><a id="dsa" class="nav-link btn btn-light" (click)="display($event)">Dean SA</a></li>
+            <li class="nav-item"><a id="adsa" class="nav-link btn btn-light" (click)="display($event)">Associate Dean SA</a></li>
+            <li class="divider"></li>
+            <li class="nav-item"><a id="hcu"  class="nav-link btn btn-light" (click)="display($event)">Hostel Coordinating Unit</a></li>
+            <li class="divider"></li>
+            <li class="nav-item"><a id="gs"  class="nav-link btn btn-light" (click)="display($event)">Institute General Secretaries Councils</a></li>
+            <li class="nav-item"><a id="ib"  class="nav-link btn btn-light" (click)="display($event)">Independent Bodies</a></li>
+            <li class="nav-item"><a id="m"  class="nav-link btn btn-light" (click)="display($event)">Media</a></li>
+          </ul>
+        </div>
       </nav>
     </div>
     <div class="col">
@@ -117,13 +121,13 @@
           </div>
         </div>
         <div class="container p-3 my-3" id="gss" style="display: none">
-          <nav class="navbar navbar-expand navbar-light bg-light" id="gsecs">
+          <nav class="navbar navbar-expand-sm navbar-light bg-light justify-content-center" id="gsecs">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#SupportedContent" aria-controls="SupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <ul class="navbar-nav mx-auto" id="SupportedContent">
               <li class="nav-item"><a id="gsha" class="nav-link btn btn-link" (click)="switch($event)">Hostel Affairs</a></li>
-<!--              <li class="nav-item"><a id="sarc" class="nav-link btn btn-link" (click)="switch($event)">Student Alumni Relations Cell</a></li>-->
+              <!--              <li class="nav-item"><a id="sarc" class="nav-link btn btn-link" (click)="switch($event)">Student Alumni Relations Cell</a></li>-->
               <li class="nav-item"><a id="ugac"  class="nav-link btn btn-link" (click)="switch($event)">Academic Affairs (UG)</a></li>
               <li class="nav-item"><a id="pgac"  class="nav-link btn btn-link" (click)="switch($event)">Academic Affairs (PG)</a></li>
               <li class="nav-item"><a id="gssa"  class="nav-link btn btn-link" (click)="switch($event)">Sports Affairs</a></li>
@@ -286,7 +290,7 @@
         </div>
         <div class="container p-3 my-3" id="ibb" style="display: none">
           <nav class="navbar navbar-expand-sm navbar-light bg-light justify-content-center" id="ibs">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#SupportedContent1" aria-controls="SupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#SupportedContent1" aria-controls="SupportedContent1" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <ul class="navbar-nav mx-auto" id="SupportedContent1">
