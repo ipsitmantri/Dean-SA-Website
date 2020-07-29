@@ -8,6 +8,7 @@ import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
 })
 export class HcuComponent implements OnInit {
   hostelPics: string[] = new Array<string>();
+  no = [1, 2, 3, 5, 6, 7, 8, 9, 11];
 
   constructor(config: NgbCarouselConfig) {
     config.interval = 3000;
@@ -17,11 +18,12 @@ export class HcuComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    for (let i = 1; i < 17; i++) {
-      this.hostelPics.push('assets/images/' + i.toString() + '.jpg');
+    for (let i = 1; i < 30; i++) {
+      if (!this.no.includes(i)){
+        this.hostelPics.push('assets/images/' + i.toString() + '.jpg');
+      }
     }
     this.hostelPics.push('assets/images/tansa.png');
-    console.log(this.hostelPics);
   }
 
 }

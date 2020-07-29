@@ -23,9 +23,11 @@ export class ContactUsComponent implements OnInit {
 
   display(event: any): void {
     const bef = document.getElementById(this.prev);
+    document.getElementById(this.prev.substr(0, this.prev.length - 1)).classList.remove('active');
     bef.style.display = 'none';
     let id = event.target.id;
     id = id.toString();
+    document.getElementById(id).classList.add('active');
     const ele = document.getElementById(id + id[id.length - 1]);
     if (ele.style.display === 'none') {
       ele.style.display = 'block';

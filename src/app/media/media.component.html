@@ -1,23 +1,22 @@
 <div class="container p-3 my-3" id="mm" style="display: none">
-  <h1 class="text-center">Insight - The Student Media Body</h1>
-  <h3>Faculty Advisors</h3>
   <div class="row p-3 my-3" *ngFor="let fac of facAds">
     <div class="col">
       <img src="{{fac.img}}" class="img-fluid rounded">
     </div>
-    <div class="col">
+    <div class="col" style="padding-top: 30px">
+      <h3>Faculty Advisor</h3>
       <ul>
         <li>{{fac.name}}</li>
         <li><fa-icon [icon]="email"></fa-icon><a href="mailto:{{fac.mail}}" target="_blank"> {{fac.mail}}</a></li>
       </ul>
     </div>
   </div>
-  <h3>Chief Editors</h3>
   <div class="row p-3 my-3" *ngFor="let editor of chiefEditors">
     <div class="col">
       <img src="{{editor.img}}" class="img-fluid rounded">
     </div>
-    <div class="col">
+    <div class="col" style="padding-top: 30px">
+      <h3>Chief Editor, Insight</h3>
       <ul>
         <li>{{editor.name}}</li>
         <li><fa-icon [icon]="email"></fa-icon><a href="mailto:{{editor.mail}}" target="_blank"> {{editor.mail}}</a></li>

@@ -22,10 +22,12 @@ export class IbComponent implements OnInit {
 
   switch2(event: any): void {
     const bef = document.getElementById(this.prev2);
+    document.getElementById(this.prev2.substr(0, this.prev2.length - 1)).classList.remove('active');
     if (bef.style.display !== 'none') {
       bef.style.display = 'none';
     }
     const id = event.target.id.toString();
+    document.getElementById(id).classList.add('active');
     const ele = document.getElementById(id + id[id.length - 1]);
     if (ele.style.display === 'none') {
       ele.style.display = 'block';

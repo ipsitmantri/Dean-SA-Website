@@ -7,6 +7,7 @@ import {StudentSupportComponent} from './student-support/student-support.compone
 import {ContactUsComponent} from './contact-us/contact-us.component';
 
 const routes: Routes = [
+  {path: 'home', component: HomeComponent},
   {path: '', component: HomeComponent},
   {path: 'hcu', component: HcuComponent},
   {path: 'housing', component: HousingComponent},

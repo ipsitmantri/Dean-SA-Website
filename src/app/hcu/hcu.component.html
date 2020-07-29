@@ -1,14 +1,12 @@
-<div class="container p-3 my-3">
-  <h1 style="text-align: center">Hostel Coordinating Unit (HCU)</h1>
-  <div class="container p-3 my-3">
-    <ngb-carousel>
-      <ng-container *ngFor="let pic of hostelPics">
-        <ng-template ngbSlide>
-          <img src="{{pic}}" class="img-fluid" width="100%" style="height: 400px">
-        </ng-template>
-      </ng-container>
-    </ngb-carousel>
-  </div>
+<div class="container-fluid" style="width: fit-content; height: max-content">
+  <ngb-carousel>
+    <ng-container *ngFor="let pic of hostelPics">
+      <ng-template ngbSlide>
+        <img src="{{pic}}" class="img-fluid center">
+      </ng-template>
+    </ng-container>
+  </ngb-carousel>
+</div>
   <div class="container p-3 my-3">
     <h2>Overview</h2>
     <p style="font-size: 12pt">The Hostel Coordinating unit is located on the minus one level of the Main Building of IIT Bombay. The HCU has the role of managing and Coordinating the activities of all 18 Student Hostels of campus (Hostels No. 1 to16, Hostel No 18 and Tansa) and 3 Buildings for Married research Scholars (MRSB, Tulsi, and Type-1). The HCU also manages the workforce under the centralized hostel management system.</p>
@@ -119,4 +117,3 @@
       </li>
     </ul>
   </div>
-</div>
