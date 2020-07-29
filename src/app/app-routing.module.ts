@@ -11,7 +11,7 @@ const routes: Routes = [
   {path: 'hcu', component: HcuComponent},
   {path: 'housing', component: HousingComponent},
   {path: 'support', component: StudentSupportComponent},
-  {path: 'contact', component: ContactUsComponent}
+  {path: 'contact', component: ContactUsComponent},
 ];
 
 @NgModule({

@@ -13,6 +13,13 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { SidebarModule } from 'ng-sidebar';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatGridListModule} from '@angular/material/grid-list';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import { DeansaComponent } from './deansa/deansa.component';
+import { AdeansaComponent } from './adeansa/adeansa.component';
+import { HcuofficeComponent } from './hcuoffice/hcuoffice.component';
+import { GscouncilsComponent } from './gscouncils/gscouncils.component';
+import { IbComponent } from './ib/ib.component';
+import { MediaComponent } from './media/media.component';
 
 @NgModule({
   declarations: [
@@ -21,17 +28,24 @@ import {MatGridListModule} from '@angular/material/grid-list';
     HcuComponent,
     HousingComponent,
     StudentSupportComponent,
-    ContactUsComponent
+    ContactUsComponent,
+    DeansaComponent,
+    AdeansaComponent,
+    HcuofficeComponent,
+    GscouncilsComponent,
+    IbComponent,
+    MediaComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    NgbModule,
-    FontAwesomeModule,
-    SidebarModule,
-    BrowserAnimationsModule,
-    MatGridListModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        NgbModule,
+        FontAwesomeModule,
+        SidebarModule,
+        BrowserAnimationsModule,
+        MatGridListModule,
+        MatSidenavModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

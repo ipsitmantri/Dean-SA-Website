@@ -1,10 +1,3 @@
-.navbar-fixed-left {
-  width: auto;
-  position: fixed;
-  border-radius: 0;
-  height: auto;
-  align-items: center;
-}
 ul {
   list-style: none;
 }
@@ -15,17 +8,25 @@ img {
 }
 .divider {
   height: 1px;
-  margin: 9px 0;
+  margin: 9px;
   overflow: hidden;
-  background-color: black;
+  background-color: white;
 }
-h1 {
-  font-size: xx-large;
-  font-weight: 400;
+.example-container {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  /*max-width: 30%;*/
+  /*background: white;*/
 }
-h2 {
-  font-size: x-large;
+mat-sidenav{
+  max-width: 30%;
+  text-align: center;
+  bottom: 1cm;
+  left: 0;
 }
-li, p {
-  font-size: 12pt;
-}
+
+

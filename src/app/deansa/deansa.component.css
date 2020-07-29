@@ -1,0 +1,11 @@
+ul{
+  list-style: none;
+}
+#footer {
+  background-color: black;
+  width: available;
+  height: 200px;
+  text-align: center;
+}
+
+
