@@ -3,6 +3,7 @@
     <ng-container *ngFor="let pic of hostelPics">
       <ng-template ngbSlide>
         <img src="{{pic}}" class="img-fluid center">
+        <div class="carousel-caption text-center" style="background-color: rgba(0,0,0,0.5);height: max-content;"><h5>Caption</h5></div>
       </ng-template>
     </ng-container>
   </ngb-carousel>
