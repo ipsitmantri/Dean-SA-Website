@@ -11,7 +11,7 @@ export class HomeComponent implements OnInit {
   deanSA: Dean;
   adeanSA: Dean;
   instiPics: string[] = new Array<string>();
-  no = [102, 103, 106, 108, 114];
+  no = [102, 103, 106, 108, 114, 105, 107, 112, 113, 115];
 
   constructor(config: NgbCarouselConfig) {
     config.interval = 2000;

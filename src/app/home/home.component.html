@@ -10,7 +10,7 @@
 </div>
 <div class="container p-3 my-3">
   <h2>About</h2>
-  <p>The IIT Bombay campus provides an ideal setting for students to participate in recreational and extracurricular activities. IITB's core program involving co-curricular activities for UG students in their first year is meant to provide them a launching pad for these activities. The mandate of the Student Affairs Office is to coordinate and regulate all aspects of student life at IITB. This is carried out primarily through two bodies:</p>
+  <p>The IIT Bombay campus provides an ideal setting for the students to participate in recreational and extracurricular activities. IITB's core program involving co-curricular activities for its students during their stay on the campus is meant to provide them with a launching pad for these activities. The mandate of the Student Affairs Office is to coordinate and regulate all aspects of student life at IITB. This is carried out primarily through two bodies:</p>
   <ol>
     <li>The <a routerLink="/hcu" target="_blank"><b>Hostel Coordinating Unit</b></a>, manages and Coordinates the activities of all Student Hostels of campus (Hostels No. 1 to16, Hostel No. 18 and Tansa) and Building for Married research Scholars (MRSB, Tulsi, and Type-1). The HCU also manages the workforce under the centralized hostel management system
     </li>
@@ -22,7 +22,7 @@
   <h2>Message from Dean SA and Associate Dean SA</h2>
   <div class="container row p-3 my-3">
     <div class="col-3">
-      <img src="{{deanSA.picture}}" class="img-fluid rounded">
+      <img src="{{deanSA.picture}}" class="img-fluid rounded" style="max-width: 200px; height: auto">
     </div>
     <div class="col">
       <p>{{deanSA.message}}</p>
@@ -31,7 +31,7 @@
   </div>
   <div class="container row p-3 my-3">
     <div class="col-3">
-      <img src="{{adeanSA.picture}}" class="img-fluid rounded" style="width: 168px; height: 220px">
+      <img src="{{adeanSA.picture}}" class="img-fluid rounded" style="max-width: 200px; height: auto">
     </div>
     <div class="col"><p>{{adeanSA.message}}</p>
       <footer *ngFor="let i of adeanSA.signature.split('<br>')">{{i}}<br></footer>

@@ -8,7 +8,7 @@ import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
 })
 export class HcuComponent implements OnInit {
   hostelPics: string[] = new Array<string>();
-  no = [1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 10, 20];
+  no = [1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 10, 15, 20];
 
   constructor(config: NgbCarouselConfig) {
     config.interval = 3000;
