@@ -2,8 +2,8 @@ ul {
   list-style: none;
 }
 img{
-  max-width: 200px;
-  height: auto;
+  width: 200px;
+  height: 220px;
 }
 h3 {
   padding-left: 30px;

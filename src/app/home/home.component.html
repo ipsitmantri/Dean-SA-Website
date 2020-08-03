@@ -22,7 +22,7 @@
   <h2>Message from Dean SA and Associate Dean SA</h2>
   <div class="container row p-3 my-3">
     <div class="col-3">
-      <img src="{{deanSA.picture}}" class="img-fluid rounded" style="max-width: 200px; height: auto">
+      <img src="{{deanSA.picture}}" class="img-fluid rounded" style="width: 200px; height: 220px">
     </div>
     <div class="col">
       <p>{{deanSA.message}}</p>
@@ -31,7 +31,7 @@
   </div>
   <div class="container row p-3 my-3">
     <div class="col-3">
-      <img src="{{adeanSA.picture}}" class="img-fluid rounded" style="max-width: 200px; height: auto">
+      <img src="{{adeanSA.picture}}" class="img-fluid rounded" style="max-width: 200px; max-height: 220px">
     </div>
     <div class="col"><p>{{adeanSA.message}}</p>
       <footer *ngFor="let i of adeanSA.signature.split('<br>')">{{i}}<br></footer>
