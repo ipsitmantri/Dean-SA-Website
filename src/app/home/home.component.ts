@@ -11,7 +11,6 @@ export class HomeComponent implements OnInit {
   deanSA: Dean;
   adeanSA: Dean;
   instiPics: string[] = new Array<string>();
-  no = [102, 103, 106, 108, 114, 105, 107, 112, 113, 115];
 
   constructor(config: NgbCarouselConfig) {
     config.interval = 2000;
@@ -22,7 +21,7 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
     this.deanSA = {
-      picture: 'assets/images/T_KUNDU2.jpg',
+      picture: 'assets/images/T_KUNDU.jpg',
       message: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum',
       signature: 'Prof. Tapanenedu Kundu<br>Dean Student Affairs<br>IIT Bombay'
     };
@@ -32,11 +31,23 @@ export class HomeComponent implements OnInit {
       message: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum',
       signature: 'Prof. George Mathew<br>Associate Dean Student Affairs<br>IIT Bombay'
     };
-    for (let i = 101; i <= 115; i++) {
-      if (!this.no.includes(i)){
-        this.instiPics.push('assets/images/' + i.toString() + '.jpg');
-      }
-    }
+    this.instiPics = [
+      'assets/images/home/1.jpg',
+      'assets/images/home/6.jpg',
+      'assets/images/home/7U4A6218.jpg',
+      'assets/images/home/227A0588.jpg',
+      'assets/images/home/APJ.jpg',
+      'assets/images/home/ARS_1031.jpg',
+      'assets/images/home/DSC03797.jpg',
+      'assets/images/home/erchome-1.png',
+      'assets/images/home/event1.png',
+      'assets/images/home/event3.png',
+      'assets/images/home/football1.jpg',
+      'assets/images/home/girlscrossy.jpg',
+      'assets/images/home/IMG_0124.JPG',
+      'assets/images/home/IMG_0125.JPG',
+      'assets/images/home/IMG_0131.PNG',
+    ];
   }
 
 }

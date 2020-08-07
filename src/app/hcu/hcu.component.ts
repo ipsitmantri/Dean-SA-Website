@@ -8,7 +8,6 @@ import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
 })
 export class HcuComponent implements OnInit {
   hostelPics: string[] = new Array<string>();
-  no = [1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 10, 15, 20];
 
   constructor(config: NgbCarouselConfig) {
     config.interval = 3000;
@@ -18,12 +17,17 @@ export class HcuComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    for (let i = 0; i <= 30; i++) {
-      if (!this.no.includes(i)){
-        this.hostelPics.push('assets/images/' + i.toString() + '.jpg');
-      }
-    }
-    this.hostelPics.push('assets/images/tansa.png');
+    this.hostelPics = [
+      'assets/images/hcu/12.jpg',
+      'assets/images/hcu/14.jpg',
+      'assets/images/hcu/16.jpg',
+      'assets/images/hcu/Screenshot_2020-07-29-12-04-05-64.jpg',
+      'assets/images/hcu/Screenshot_2020-07-29-12-05-53-93.jpg',
+      'assets/images/hcu/Screenshot_2020-07-29-12-06-48-41.jpg',
+      'assets/images/hcu/Screenshot_2020-07-29-12-07-21-33.jpg',
+      'assets/images/hcu/Screenshot_2020-07-29-12-08-32-05.jpg',
+      'assets/images/hcu/Screenshot_2020-07-29-12-10-52-04.jpg',
+    ];
   }
 
 }

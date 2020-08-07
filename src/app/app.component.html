@@ -1,48 +1,46 @@
-<div class="container-fluid" style="background-color: black">
-  <nav class="navbar navbar-expand-md navbar-dark  fixed-top" style="background-color: black; margin: auto;">
-    <a href="#" class="navbar-left"><img
-      style="width:45px;height:45px; padding: 5px 0 2px 2px; margin-left: -10px; object-fit: contain; margin-right: 2px"
-      src="./assets/iitb.png" alt=""></a>
-    <a class="navbar-brand">Dean Student Affairs Office, IIT Bombay</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+<nav class="navbar navbar-expand-md navbar-dark  fixed-top" style="background-color: black;">
+  <a href="#" class="navbar-left"><img
+    style="width:45px;height:45px; padding: 5px 0 2px 2px; margin-left: -10px; object-fit: contain; margin-right: 2px"
+    src="./assets/iitb.png" alt=""></a>
+  <a class="navbar-brand">Dean Student Affairs Office, IIT Bombay</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-      <span style="flex: 1 1 auto;"></span>
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/home" routerLinkActive="active">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/hcu" routerLinkActive="active">Hostel Coordinating Unit</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://gymkhana.iitb.ac.in/" target="_blank">Student's Gymkhana</a>
-        </li>
-        <!--      <li class="nav-item">-->
-        <!--        <a class="nav-link light" routerLink="/housing" routerLinkActive="active">Housing</a>-->
-        <!--      </li>-->
-        <li class="nav-item">
-          <a class="nav-link light" routerLink="/support" routerLinkActive="active">Student Suppport</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link light" routerLink="/contact" routerLinkActive="active">Contact Us</a>
-        </li>
-        <!--      <li class="nav-item dropdown">-->
-        <!--        <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Important Documents</a>-->
-        <!--        <div class="dropdown-menu" aria-labelledby="dropdown01">-->
-        <!--          <a class="dropdown-item" href="https://gymkhana.iitb.ac.in/students/docs/campusCodeOfConduct.pdf" target="_blank">Code of Conduct</a>-->
-        <!--          <a class="dropdown-item" href="https://gymkhana.iitb.ac.in/students/docs/DACRules.pdf" target="_blank">DAC Rules</a>-->
-        <!--          <a class="dropdown-item" href=" https://gymkhana.iitb.ac.in/students/rulebook.pdf" target="_blank">Academic Rules</a>-->
-        <!--          <a class="dropdown-item" href="https://gymkhana.iitb.ac.in/SAC-Constitution-March-2018.pdf" target="_blank">SAC Constitution</a>-->
-        <!--        </div>-->
-        <!--      </li>-->
-      </ul>
-    </div>
-  </nav>
-</div>
-<div class="container-fluid" style="padding-top: 5em">
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <span style="flex: 1 1 auto;"></span>
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/home" routerLinkActive="active">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/hcu" routerLinkActive="active">Hostel Coordinating Unit</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://gymkhana.iitb.ac.in/" target="_blank">Student's Gymkhana</a>
+      </li>
+      <!--      <li class="nav-item">-->
+      <!--        <a class="nav-link light" routerLink="/housing" routerLinkActive="active">Housing</a>-->
+      <!--      </li>-->
+      <li class="nav-item">
+        <a class="nav-link light" routerLink="/support" routerLinkActive="active">Student Suppport</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link light" routerLink="/contact" routerLinkActive="active">Contact Us</a>
+      </li>
+      <!--      <li class="nav-item dropdown">-->
+      <!--        <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Important Documents</a>-->
+      <!--        <div class="dropdown-menu" aria-labelledby="dropdown01">-->
+      <!--          <a class="dropdown-item" href="https://gymkhana.iitb.ac.in/students/docs/campusCodeOfConduct.pdf" target="_blank">Code of Conduct</a>-->
+      <!--          <a class="dropdown-item" href="https://gymkhana.iitb.ac.in/students/docs/DACRules.pdf" target="_blank">DAC Rules</a>-->
+      <!--          <a class="dropdown-item" href=" https://gymkhana.iitb.ac.in/students/rulebook.pdf" target="_blank">Academic Rules</a>-->
+      <!--          <a class="dropdown-item" href="https://gymkhana.iitb.ac.in/SAC-Constitution-March-2018.pdf" target="_blank">SAC Constitution</a>-->
+      <!--        </div>-->
+      <!--      </li>-->
+    </ul>
+  </div>
+</nav>
+<div class="jumbotron" style="background-color: white; padding-top: 5rem">
   <router-outlet></router-outlet>
 </div>
 <!--<div class="container-fluid" id="footer">-->
@@ -55,9 +53,9 @@
 <!--</div>-->
 <footer class="container-fluid py-1 " style="background-color: black;">
   <div class="row p-3 my-3">
-<!--    <div class="col mt-5">-->
-<!--      <img src="assets/iitb.png" class="img-fluid" style="margin-right: auto;" alt="">-->
-<!--    </div>-->
+    <!--    <div class="col mt-5">-->
+    <!--      <img src="assets/iitb.png" class="img-fluid" style="margin-right: auto;" alt="">-->
+    <!--    </div>-->
     <div class="col-sm-3 col-md">
       <h6 style="color: azure" class="text-center">Hostel Coordinating Unit</h6>
       <ul class="list-unstyled text-center">
@@ -69,11 +67,11 @@
         </li>
       </ul>
     </div>
-    <div class="col-3 col-md">
+    <div class="col-sm-3 col-md">
       <h6 style="color: azure" class="text-center">Students's Gymkhana</h6>
       <div>
         <div class="row">
-          <div class="col" style="border-right: 1px solid azure">
+          <div class="col-sm" style="border-right: 1px solid azure">
             <ul class="text-center list-unstyled">
               <li>
                 <a href="" target="_blank">Hostel Affairs</a>
@@ -95,7 +93,7 @@
               </li>
             </ul>
           </div>
-          <div class="col">
+          <div class="col-sm">
             <ul class="text-center list-unstyled">
               <li>
                 <a href="https://moodi.org/" target="_blank">Mood Indigo</a>
@@ -120,7 +118,7 @@
         </div>
       </div>
     </div>
-    <div class="col-3 col-md">
+    <div class="col-sm-3 col-md">
       <h6 style="color: azure" class="text-center">Student Support</h6>
       <ul class="list-unstyled text-center">
         <li>
@@ -140,7 +138,7 @@
         </li>
       </ul>
     </div>
-    <div class="col-3 col-md">
+    <div class="col-sm-3 col-md">
       <h6 class="text-center" style="color: azure">Important Documents</h6>
       <ul class="list-unstyled text-center">
         <li><a  href="https://gymkhana.iitb.ac.in/students/docs/campusCodeOfConduct.pdf" target="_blank">Campus Code of Conduct</a></li>
@@ -149,7 +147,7 @@
         <li><a  href="https://gymkhana.iitb.ac.in/SAC-Constitution-March-2018.pdf" target="_blank">SAC Constitution</a></li>
       </ul>
     </div>
-    <div class="col-12 col-md ">
+    <div class="col-sm-12 col-md ">
       <p class="text-center"><a style="color: azure" href="https://www.google.com/maps/place/Indian+Institute+of+Technology+Bombay/@19.1334302,72.9132679,15z/data=!4m5!3m4!1s0x0:0x68fdcea4c5c5894e!8m2!3d19.1334302!4d72.9132679" target="_blank"><fa-icon [icon]="map" style="color: azure"></fa-icon> Reach Us</a></p>
       <ul class="list-unstyled text-center">
         <li>

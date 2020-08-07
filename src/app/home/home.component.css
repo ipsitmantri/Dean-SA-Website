@@ -1,7 +1,16 @@
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 900px;
-  height: 600px;
+/*.center {*/
+/*  display: block;*/
+/*  margin-left: auto;*/
+/*  margin-right: auto;*/
+/*  width: 900px;*/
+/*  height: 600px;*/
+/*}*/
+
+
+@media only screen and (max-width: 320px){
+    [class="home"] {
+      width: 100%;
+      height: auto;
+      margin: auto;
+    }
 }
