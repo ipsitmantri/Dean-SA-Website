@@ -10,9 +10,7 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { StudentSupportComponent } from './student-support/student-support.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { SidebarModule } from 'ng-sidebar';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatGridListModule} from '@angular/material/grid-list';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import { DeansaComponent } from './deansa/deansa.component';
 import { AdeansaComponent } from './adeansa/adeansa.component';
@@ -41,9 +39,7 @@ import { MediaComponent } from './media/media.component';
         AppRoutingModule,
         NgbModule,
         FontAwesomeModule,
-        SidebarModule,
         BrowserAnimationsModule,
-        MatGridListModule,
         MatSidenavModule
     ],
   providers: [],

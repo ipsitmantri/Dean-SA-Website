@@ -19,3 +19,14 @@ li {
   color: azure;
 }
 
+@media only screen and (max-width: 700px) {
+  [class="navbar-brand"]{
+    font-size: small;
+  }
+  .nav-item .nav-link {
+    font-size: small;
+  }
+  li, h6 {
+    font-size: small;
+  }
+}
