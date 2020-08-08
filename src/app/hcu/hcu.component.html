@@ -2,7 +2,7 @@
   <ngb-carousel>
     <ng-container *ngFor="let pic of hostelPics">
       <ng-template ngbSlide style="background-size: contain">
-        <img src="{{pic}}" class="img-fluid home" style="display: block; margin-left: auto; margin-right: auto">
+        <img src="{{pic}}" class="img-fluid home" style="display: block; margin-left: auto; margin-right: auto;">
         <div class="carousel-caption text-center" style="background-color: rgba(0,0,0,0.5);height: max-content;"><h5>Caption</h5></div>
       </ng-template>
     </ng-container>
@@ -15,12 +15,17 @@
   <div class="container p-3 my-3">
     <h2>HCU Office</h2>
     <div class="row p-3 my-3">
-      <div class="col-sm">
-        <img src="assets/images/anonymous.jpg" class="img-fluid rounded" style="max-width: 200px; height: auto">
+      <div class="col-sm-4">
+        <img src="assets/images/arhcu.jpg" class="img-fluid rounded" style="max-width: 200px; height: auto">
       </div>
-      <div class="col-sm">Assistant Registrar HCU <br>
-      Extension Number: 0000 <br>
-      (Pic change afterwards)</div>
+      <div class="col-sm-6">
+        <h3 style="padding-top: 30px">Assistant Registrar HCU</h3>
+        <ul style="list-style: none">
+          <li>Shri Rohan Bagde</li>
+          <li><fa-icon [icon]="phone"></fa-icon> 022-2576-8900</li>
+          <li><fa-icon [icon]="email"></fa-icon><a href="mailto:arhcu@iitb.ac.in" target="_blank"> arhcu@iitb.ac.in</a>, <a href="mailto:hcu.office@iitb.ac.in" target="_blank"> hcu.office@iitb.ac.in</a></li>
+        </ul>
+      </div>
     </div>
   </div>
   <div class="container p-3 my-3">
@@ -42,7 +47,7 @@
     <ul>
       <li>Coordinating the activities of various Hostels in matters of common interest and common policy
         <ul>
-          <li>Majority of the hostels have a private caterer serving in their messes.  HCU publishes the tender for selection of caterers in various hostels and conducts the process of selection.
+          <li>	Majority of the hostels have a private caterer serving in their messes.  HCU invites  tenders for selection of caterers in various hostels and conducts the process of selection.
           </li>
           <li>The hostel wardens’ council decides and formulates various policies, such as the policy of guest booking, policy for selection of caterers to run the messes and canteens in all the hostels. These common policies are implemented by HCU.
           </li>
@@ -51,7 +56,7 @@
       <li>
         Allotment of hostels to the students/Interns/Interviewee for admissions/conference, seminars, workshops and other events attendee/Guest accommodation
         <ul>
-          <li>New students:
+          <li><b>New students</b>:
             <ul>
               <li>The list of students joining the institute is received from the academic section of the institute and usually all the first-year students for all academic programmes (UG, PG) are allotted to the same hostel.</li>
               <li>In the normal course, any change in room allocation is not allowed.</li>
@@ -60,14 +65,14 @@
               </li>
             </ul>
           </li>
-          <li>Existing Students:
+          <li><b>Existing Students</b>:
             <ul>
               <li>Second-year onwards students are shifted to another hostel. The allocation is again based on their department and no change in allocation is allowed. Towards the end of each semester, the students are allowed to make a request for retention of the room during the vacation and only limited number of such requests are allowed based on the genuine requirement.(Attending summer course, final year project etc)
               </li>
             </ul>
           </li>
           <li>
-            Interns:
+            <b>Interns</b>:
             <ul>
               <li>Hostels rooms are allotted to external interns during summer and winter vacation provided they are working with a faculty member from IIT Bombay. </li>
               <li>The interns are required to complete the formalities such as registration, payment of internship fees etc. with the academic office and thereafter visit HCU (only during working hours) for allotment of accommodation. Rooms to interns are always provided on a sharing basis.</li>
@@ -75,14 +80,20 @@
             </ul>
           </li>
           <li>
-            Candidates visiting IIT for various Interviews for admission school the academic programme of the institute (M.Tech, M.Sc., PhD etc.):
+            <b>Candidates visiting IIT for various Interviews for admission school the academic programme of the institute (M.Tech, M.Sc., PhD etc.)</b>:
             <ul>
               <li>Hostels rooms are allotted to the candidates appearing for written test interviews, for admission to the various academic programmes of the institute</li>
               <li>The allotment is made for a short duration of 3-4 days. An online portal is activated usually before 10-20 days before the dates of written test and interview details instructions are published at the time of release.</li>
             </ul>
           </li>
           <li>
-            Guest accommodation to the parents of the registered students of IIT Bombay
+            <b>Conferences, seminars, workshops and other events attendee</b>:
+            <ul>
+              <li>	Conferences, Seminars, Workshops, symposiums etc. are held in the institute at regular intervals. The participants in these events are accommodated in various hostels on campus. For hostel rules, the organizers of the event are required to send the request to the <b>Associated Dean(SA)</b>, well in advance and a Confirmation will be given about two weeks before the date of the event.</li>
+            </ul>
+          </li>
+          <li>
+            <b>Guest accommodation to the parents of the registered students of IIT Bombay</b>
             <ul>
               <li>Guest accommodation for parents visiting their children’s, studying in IIT Bombay, is provided subject to the following norms:</li>
               <ul>
@@ -106,14 +117,14 @@
       <li>
         Handling HR function in respect of CHMS workers
         <ul>
-          <li>There are about 125 regular staff employed under the centralized hostel management system. HCU maintained all service records in case of these employees. HCU also processes their retirement, final payments etc.
+          <li>There are about 117 regular staff employed under the centralized hostel management system. HCU looks after all establishment related matters of the CHMS Staff
           </li>
         </ul>
       </li>
       <li>
         Issuing no-dues certificates to graduate students
         <ul>
-          <li>Every graduating student is required to obtain a no dues certificate from the respective hostel before approaching the hostel co-ordinating unit for no dues certificates. The form of no dues certificates is available in HCU.</li>
+          <li>Every graduating student is required to obtain a No Dues certificate(NDC) from the respective hostel before approaching the Hostel co-ordinating unit for no dues certificates. The form of no dues certificates is available with HCU.</li>
         </ul>
       </li>
     </ul>
