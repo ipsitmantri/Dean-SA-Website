@@ -3,7 +3,7 @@
     <ng-container *ngFor="let pic of instiPics">
       <ng-template ngbSlide style="background-size: contain">
         <img src="{{pic}}" class="img-fluid home" style="display: block; margin-left: auto; margin-right: auto;">
-        <div class="carousel-caption text-center justify-content-center" style="background-color: rgba(0,0,0,0.5); overflow: hidden"><h5>Caption</h5></div>
+<!--        <div class="carousel-caption text-center justify-content-center" style="background-color: rgba(0,0,0,0.5); overflow: hidden"><h5>Caption</h5></div>-->
       </ng-template>
     </ng-container>
   </ngb-carousel>
@@ -25,17 +25,26 @@
       <div class="col-sm-3">
         <img src="{{deanSA.picture}}" class="img-fluid rounded home" style="width: 200px; height: 220px">
       </div>
-      <div class="col">
-        <p>{{deanSA.message}}</p>
-        <footer  *ngFor="let i of deanSA.signature.split('<br>')">{{i}}<br></footer>
+      <div class="col-sm">
+        <blockquote>{{deanSA.message}}
+          <footer class="font-weight-bold">Prof. Tapanendu Kundu</footer>
+          <footer *ngFor="let i of deanSA.signature.split('<br>')">{{i}}<br></footer>
+        </blockquote>
+<!--        <footer class="font-italic font-weight-bold">Prof. Tapanendu Kundu</footer>-->
+<!--        <footer class="font-italic"  *ngFor="let i of deanSA.signature.split('<br>')">{{i}}<br></footer>-->
       </div>
     </div>
     <div class="container row p-3 my-3">
       <div class="col-sm-3">
         <img src="{{adeanSA.picture}}" class="img-fluid rounded home" style="width: 200px; height: 220px">
       </div>
-      <div class="col"><p>{{adeanSA.message}}</p>
-        <footer *ngFor="let i of adeanSA.signature.split('<br>')">{{i}}<br></footer>
+      <div class="col-sm">
+        <blockquote>{{adeanSA.message}}
+          <footer class="font-weight-bold">Prof. George Mathew</footer>
+          <footer  *ngFor="let i of adeanSA.signature.split('<br>')">{{i}}<br></footer>
+        </blockquote>
+        <!--        <footer class="font-italic font-weight-bold">Prof. Tapanendu Kundu</footer>-->
+        <!--        <footer class="font-italic"  *ngFor="let i of deanSA.signature.split('<br>')">{{i}}<br></footer>-->
       </div>
     </div>
   </div>
