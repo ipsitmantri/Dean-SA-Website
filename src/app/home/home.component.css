@@ -16,5 +16,6 @@ blockquote {
 }
 blockquote footer {
   font-family: "Calibri";
-  font-size: medium;
+  font-size: 9pt;
+  font-style: oblique;
 }
