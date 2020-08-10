@@ -32,20 +32,20 @@ export class HomeComponent implements OnInit {
       signature: 'Associate Dean Student Affairs<br>IIT Bombay'
     };
     this.instiPics = [
-      'assets/images/home/1.jpg',
-      'assets/images/home/6.jpg',
-      'assets/images/home/7U4A6218.jpg',
-      'assets/images/home/227A0588.jpg',
-      'assets/images/home/APJ.jpg',
-      'assets/images/home/ARS_1031.jpg',
-      'assets/images/home/DSC03797.jpg',
+      'assets/images/home/1-min.jpg',
+      'assets/images/home/6-min.jpg',
+      'assets/images/home/7U4A6218-min.jpg',
+      'assets/images/home/227A0588-min.jpg',
+      'assets/images/home/APJ-min.jpg',
+      'assets/images/home/ARS_1031-min.jpg',
+      'assets/images/home/DSC03797-min.jpg',
       'assets/images/home/erchome-1.png',
       'assets/images/home/event1.png',
       'assets/images/home/event3.png',
-      'assets/images/home/football1.jpg',
-      'assets/images/home/girlscrossy.jpg',
-      'assets/images/home/IMG_0124.JPG',
-      'assets/images/home/IMG_0125.JPG',
+      'assets/images/home/football1-min.jpg',
+      'assets/images/home/girlscrossy-min.jpg',
+      'assets/images/home/IMG_0124-min.jpg',
+      'assets/images/home/IMG_0125-min.jpg',
       'assets/images/home/IMG_0131.PNG',
     ];
   }

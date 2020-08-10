@@ -25,15 +25,15 @@ export class HcuComponent implements OnInit {
 
   ngOnInit(): void {
     this.hostelPics = [
-      'assets/images/hcu/12.jpg',
-      'assets/images/hcu/14.jpg',
-      'assets/images/hcu/16.jpg',
-      'assets/images/hcu/Screenshot_2020-07-29-12-04-05-64.jpg',
-      'assets/images/hcu/Screenshot_2020-07-29-12-05-53-93.jpg',
-      'assets/images/hcu/Screenshot_2020-07-29-12-06-48-41.jpg',
-      'assets/images/hcu/Screenshot_2020-07-29-12-07-21-33.jpg',
-      'assets/images/hcu/Screenshot_2020-07-29-12-08-32-05.jpg',
-      'assets/images/hcu/Screenshot_2020-07-29-12-10-52-04.jpg',
+      'assets/images/hcu/12-min.jpg',
+      'assets/images/hcu/14-min.jpg',
+      'assets/images/hcu/16-min.jpg',
+      'assets/images/hcu/Screenshot_2020-07-29-12-04-05-64-min.jpg',
+      'assets/images/hcu/Screenshot_2020-07-29-12-05-53-93-min.jpg',
+      'assets/images/hcu/Screenshot_2020-07-29-12-06-48-41-min.jpg',
+      'assets/images/hcu/Screenshot_2020-07-29-12-07-21-33-min.jpg',
+      'assets/images/hcu/Screenshot_2020-07-29-12-08-32-05-min.jpg',
+      'assets/images/hcu/Screenshot_2020-07-29-12-10-52-04-min.jpg',
     ];
   }
 
