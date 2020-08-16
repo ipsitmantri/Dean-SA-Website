@@ -44,8 +44,8 @@ export class HomeComponent implements OnInit {
       'assets/images/home/event3.png',
       'assets/images/home/football1-min.jpg',
       'assets/images/home/girlscrossy-min.jpg',
-      'assets/images/home/IMG_0124-min.jpg',
-      'assets/images/home/IMG_0125-min.jpg',
+      'assets/images/home/IMG_0124-min.JPG',
+      'assets/images/home/IMG_0125-min.JPG',
       'assets/images/home/IMG_0131.PNG',
     ];
   }
