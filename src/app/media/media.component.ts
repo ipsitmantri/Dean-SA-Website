@@ -32,8 +32,8 @@ export class MediaComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    this.chiefEditors[0] = {img: 'assets/images/Insight/amogh.png', mail: '170020027@iitb.ac.in', name: 'Amogh Gawaskar', site: 'https://www.insightiitb.org/'};
-    this.chiefEditors[1] = {img: 'assets/images/Insight/suman.png', mail: 'suman_mondal@iitb.ac.in', name: 'Suman Mondal', site: 'https://www.insightiitb.org/'};
+    this.chiefEditors[0] = {img: 'assets/images/Insight/amogh.png', mail: 'insight@iitb.ac.in', name: 'Amogh Gawaskar', site: 'https://www.insightiitb.org/'};
+    this.chiefEditors[1] = {img: 'assets/images/Insight/suman.png', mail: 'insight@iitb.ac.in', name: 'Suman Mondal', site: 'https://www.insightiitb.org/'};
     this.facAds[0] = {img: 'assets/images/Insight/vjs.png', name: 'Prof. Vaijayanthi Sarma', mail: 'vsarma@iitb.ac.in'};
     this.facAds[1] = {img: 'assets/images/Insight/akshay.png', name: 'Prof. S Akshay', mail: 'akshayss@cse.iitb.ac.in'};
     this.facAds[2] = {img: 'assets/images/Insight/manju.png', name: 'Prof. D Manjunath', mail: 'dmanju@ee.iitb.ac.in'};
