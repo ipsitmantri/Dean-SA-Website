@@ -23,9 +23,7 @@
               "src/favicon.ico",
               "src/assets"
             ],
-            "styles": [
-
-            ],
+            "styles": [],
             "scripts": []
           },
           "configurations": {
@@ -117,6 +115,10 @@
               "devServerTarget": "Dean-SA-Website:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
     }
